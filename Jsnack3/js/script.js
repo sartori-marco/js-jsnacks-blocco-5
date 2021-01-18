@@ -72,6 +72,28 @@ var zucchineLunghe = [];
 
 // poi sommo i pesi dei due gruppi
 // creo i due array per le somme
+var sommaLunghe = 0;
+var sommaCorte = 0;
+
+// creo ciclo + if per vedere la lunghezza e sommarle
+
+for (var i = 0; i < zucchine.length; i++) {
+  if (zucchine[i].lunghezza >= 15) {
+    zucchineLunghe.push(zucchine[i]);
+    sommaLunghe += zucchine[i].peso;
+  }
+  else {
+    zucchineCorte.push(zucchine[i]);
+    sommaCorte += zucchine[i].peso;
+    }
+
+}
+
+pesoTotale = sommaLunghe + sommaCorte
+
+console.log('Peso zucchine >= 15: ' + sommaLunghe);
+console.log('Peso zucchine < 15: ' + sommaCorte);
+console.log('Peso totale: ' + pesoTotale);
 
 
 
