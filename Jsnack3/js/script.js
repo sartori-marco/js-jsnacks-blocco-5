@@ -87,9 +87,9 @@ for (var i = 0; i < zucchine.length; i++) {
     sommaCorte += zucchine[i].peso;
     }
 
-}
+};
 
-pesoTotale = sommaLunghe + sommaCorte
+pesoTotale = sommaLunghe + sommaCorte;
 
 console.log('Peso zucchine >= 15: ' + sommaLunghe);
 console.log('Peso zucchine < 15: ' + sommaCorte);
